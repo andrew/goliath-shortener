@@ -4,36 +4,34 @@ GEM
     async-rack (0.5.1)
       rack (~> 1.1)
     base62 (0.1.4)
-    em-synchrony (1.0.0)
+    em-synchrony (1.0.3)
       eventmachine (>= 1.0.0.beta.1)
-    eventmachine (1.0.0.beta.4)
-    goliath (0.9.4)
+    em-websocket (0.4.0)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0.5.3)
+    eventmachine (1.0.0)
+    goliath (1.0.1)
       async-rack
       em-synchrony (>= 1.0.0)
-      eventmachine (>= 1.0.0.beta.3)
-      http_parser.rb
-      http_router (~> 0.9.0)
+      em-websocket
+      eventmachine (>= 1.0.0.beta.4)
+      http_parser.rb (= 0.5.3)
       log4r
       multi_json
       rack (>= 1.2.2)
       rack-contrib
       rack-respond_to
-    hiredis (0.4.1)
+    hiredis (0.4.5)
     http_parser.rb (0.5.3)
-    http_router (0.9.7)
-      rack (>= 1.0.0)
-      url_mount (~> 0.2.1)
-    log4r (1.1.9)
-    multi_json (1.0.3)
-    rack (1.3.5)
+    log4r (1.1.10)
+    multi_json (1.5.0)
+    rack (1.5.2)
     rack-accept-media-types (0.9)
     rack-contrib (1.1.0)
       rack (>= 0.9.1)
     rack-respond_to (0.9.8)
       rack-accept-media-types (>= 0.6)
-    redis (2.2.2)
-    url_mount (0.2.1)
-      rack
+    redis (3.0.2)
 
 PLATFORMS
   ruby
